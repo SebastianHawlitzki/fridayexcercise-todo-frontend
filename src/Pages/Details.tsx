@@ -28,7 +28,7 @@ export default function Details() {
     }, [])
     return (
 
-        <div>
+        <div className={"details-container"}>
             <h2>{toDo.description}</h2>
             <p>{toDo.status}</p>
         </div>

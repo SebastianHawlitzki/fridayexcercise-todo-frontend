@@ -5,6 +5,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: lightgray;
 }
 
 code {
@@ -26,9 +27,28 @@ code {
 }
 
 .header-todo {
-    display: flex;
+
     justify-content: left;
     width: 33%;
     padding-left: 4rem;
     height: 50px;
+
 }
+
+.header2{
+    display: flex;
+    width: 100%;
+}
+
+.header-doing {
+
+    width: 33%;
+    height: 50px;
+}
+
+.header-done {
+
+    width: 33%;
+    height: 50px;
+}
+

@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import {ToDo, ToDoDTO} from "./ToDo";
 import axios from "axios";
 import {Link} from "react-router-dom";
+import Doing from "./Doing";
+import Details from "../Pages/Details";
 
 
 export default function ToDoHomePage() {
@@ -54,22 +56,27 @@ export default function ToDoHomePage() {
     })();
   */
 
-    //PUT new ToDo advanced
+
+    //PUT: advance new ToDo
 
 
 
 
-// Details Link neben oder unter ToDo für jedes List-Element
-// <Link to = {"/details/" + toDoId}>Details<Link/>
+
+
 // ToDo: <Doing/> <Done/>
     return (
-        <div>
+        <div className={"home-body"}>
 
             <div className={"header"}>
                 <header><h1>ToDo-Aufgabe</h1></header>
             </div>
 
+            <div className={"header2"}>
             <div className={"header-todo"}><h2>ToDo's</h2></div>
+            <div className={"header-doing"}><h2>Doing</h2> </div>
+                <div className={"header-done"}><h2>Done</h2> </div>
+            </div>
             <div className={"toDo-list"}>
                 <ul>
                     {toDoList.map(toDo =>
@@ -83,8 +90,15 @@ export default function ToDoHomePage() {
                     <input type="text" onChange={(toDo) => setToDo(toDo.target.value)}/>
                     <button >Add</button>
                 </form>
+
+            </div>
+            <div>
+              <Details/>
             </div>
 
+            <div>
+
+            </div>
 
         </div>
     );

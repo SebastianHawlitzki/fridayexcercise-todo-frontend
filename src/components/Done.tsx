@@ -1,8 +1,7 @@
 import React from "react";
 
 
-export default function ToDoCard() {
-
+export default function Done () {
 
 
     return (
